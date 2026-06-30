@@ -1,0 +1,145 @@
+  Probability — Problem Entry Log,,,,,,,,
+Enter problems below. Difficulty is pre-filled but editable. Problem_ID format: CALC-E-01 | PROB-M-05 | LA-H-12,,,,,,,,
+Problem_ID,Source,Problem Statement,Correct Answer,Difficulty,Topic,,,Notes / Edge Case
+,,,,,,,,
+Class 01 problem 04(Intro to Probability ,MIT OpenCourseWare ,"(a) Count the number of ways to get exactly 3 heads in 10 flips of a coin.
+(b) For a fair coin, what is the probability of exactly 3 heads in 10 flips?",(a) 10c3  (b) 0.117,Easy,Probability,binomial probability,,Tests understanding the combination and sample-space counting
+Class 01 problem 01(Intro to Probability ,MIT OpenCourseWare ,"A band consists of singers and guitar players:
+7 people sing, 4 play guitar, 2 do both
+How many people are in the band?",9,Easy,Probability,Inclusion–Exclusion Principle,,Tests understanding of overlapping sets and avoidance of double counting.
+Class 01 problem 02(Intro to Probability ,MIT OpenCourseWare ,"There are 5 Competitors in an Olympics 100m final.How many ways can gold, silver, and bronze be awarded?
+",60 ways (5 × 4 × 3 = 60),Easy,Probability,Rule of Product / Permutations,,"Tests understanding that order matters (gold, silver, bronze are distinct positions)."
+"6.041SC Probabilistic Systems Analysis, Problem Set 1",MIT OpenCourseWare ,"You flip a fair coin 3 times, determine the probability of the below events. Assume all
+sequences are equally likely.
+(a) Three heads: HHH
+(b) The sequence head, tail, head: HTH
+(c) Any sequence with 2 heads and 1 tail
+(d) Any sequence where the number of heads is greater than or equal to the number of tails","1/8, 1/8, 3/8, 1/2",Easy,Probability,Sample Spaces and Coin Tosses,,Tests basic understanding of equally likely outcomes and event counting.
+"6.041SC Probabilistic Systems Analysis, Problem Set 1 qus 3",MIT OpenCourseWare ,"Bob has a peculiar pair of four-sided dice. When he rolls the dice, the probability of any
+particular outcome is proportional to the sum of the results of each die. All outcomes that
+result in a particular sum are equally likely.
+(a) What is the probability of the sum being even?
+(b) What is the probability of Bob rolling a 2 and a 3, in any order?","1/2, 1/8",Easy,Probability,Weighted Probability Distributions,,Tests understanding of non-uniform probability distributions.
+"6.041SC Probabilistic Systems Analysis, Problem Set 3 qus1",MIT OpenCourseWare ,"The hats of n persons are thrown into a box. The persons then pick up their hats at random (i.e.,
+so that every assignment of the hats to the persons is equally likely). What is the probability
+that
+(a) every person gets his or her hat back?", 1/n!,Easy,Probability,Permutations and Sample Spaces,,Tests understanding of equally likely permutations and favorable outcomes.
+Problem sol 03 (Intro to P& S),MIT OpenCourseWare ,"Roll two dice and consider the following events
+• 𝐴 = ‘first die is 3’
+• 𝐵 = ‘sum is 6’
+• 𝐶 = ‘sum is 7’
+𝐴 is independent of
+(a) 𝐵 and 𝐶 (b) 𝐵 alone (c) 𝐶 alone (d) Neither 𝐵 or 𝐶.",c,Easy,Probability,,,
+Problem sol 03 (Intro to P& S),MIT OpenCourseWare ,"Ignoring leap days, the days of the year can be numbered 1 to 365. Assume that birthdays
+are equally likely to fall on any day of the year. Consider a group of 𝑛 people, of which you
+are not a member. An element of the sample space 𝑆 will be a sequence of 𝑛 birthdays (one
+for each person).
+(a) Define the probability function 𝑃 for 𝑆. (This will depend on 𝑛.)",1/365 to power n,Easy,Probability,,,
+Problem sol 03 (Intro to P& S),MIT OpenCourseWare ,"
+Suppose 𝑋 is a discrete random variable,
+True or False: If Var(𝑋) = 0 then 𝑋 is constant.
+Solution: True. If 𝑋 can take more than one value with positive probability, than Var(𝑋)
+will be a sum of positive terms. So, 𝑋 is constant if and only if Var(𝑋) = 0.",TRUE,Easy,Probability,Variance,,
+  MEDIUM PROBLEMS,,,,,,,,
+Intro to prob (class02 problem03),MIT OpenCourseWare,"Consider the following experiment. Roll a 20-sided die (D20) 9 times. What is the probability
+that all 9 rolls are distinct.For this experiment, how would you define the sample space, probability function, and event?
+Compute the probability that all rolls (in one trial of 9 rolls) are distinct.",0.119,Medium,Probability,Distinct Outcomes,,Requires counting favorable outcomes and total outcomes separately before computing probability.
+Intro to prob (class02 problem02),MIT OpenCourseWare,"
+Supposes a class has 50 students: 20 male (M), 25 brown-eyed (B)
+For a randomly chosen student, what is the range of possible values for 𝑝 = 𝑃 (𝑀 ∪ 𝐵)?
+(a) 𝑝 ≤ 0.4
+(b) 0.4 ≤ 𝑝 ≤ 0.5
+(c) 0.4 ≤ 𝑝 ≤ 0.9
+(d) 0.5 ≤ 𝑝 ≤ 0.9
+(e) 0.5 ≤ 𝑝",(d) 0.5 ≤ 𝑝 ≤ 0.9,Medium,Probability,Inclusion–Exclusion Principle,,
+class 02 problem set 02 qus 1,MIT OpenCourseWare,"For this problem assume that puppies are equally probable to be male or female. Likewise
+for kittens.
+Be sure to carefully justify your answers.
+(a) Our dog Layla had two puppies. The older puppy is female. What is the probability that
+both puppies are female?(b) Our cat Ariel had two kittens. At least one of them is male. What is the probability
+that both kittens are males?",(a) 1/2 (b) 1/3,Medium,Probability,Conditional Probability,,Tests understanding that different information can produce different conditional probabilities despite similar wording.
+"Probabilistic Systems Analysis, Problem Set 2 qus 3",MIT OpenCourseWare,"The local widget factory is having a blowout widget sale. Everything must go, old and new. The
+factory has 500 old widgets, and 1500 new widgets in stock. The problem is that 15% of the old
+widgets are defective, and 5% of the new ones are defective as well. You can assume that widgets
+are selected at random when an order comes in. You are the first customer since the sale was
+announced.
+(a) You flip a fair coin once to decide whether to buy old or new widgets. You order two widgets
+of the same type, chosen based on the outcome of the coin toss. What is the probability
+that they will both be defective?
+(b) Given that both widgets turn out to be defective, what is the probability that they were
+old widgets? 
+","0.0125, 0.8965",Medium,Probability,Conditional Probability and Bayes' Theorem,,
+"Probabilistic Systems Analysis, Problem Set 2 qus 1",MIT OpenCourseWare,"Most mornings, Victor checks the weather report before deciding whether to carry an umbrella.
+If the forecast is “rain,” the probability of actually having rain that day is 80%. On the other
+hand, if the forecast is “no rain,” the probability of it actually raining is equal to 10%. During
+fall and winter the forecast is “rain” 70% of the time and during summer and spring it is 20%.
+(a) One day, Victor missed the forecast and it rained. What is the probability that the forecast
+was “rain” if it was during the winter? What is the probability that the forecast was “rain”
+if it was during the summer?",2/3,Medium,Probability,Bayes' Theorem,,
+Probability and statistics in eng (quiz 1 qus 1),MIT OpenCourseWare,"A device has a sensor connected to an alarming system. The sensor triggers with
+probability 0.95 if dangerous conditions exist in a given day and with probability 0.005 if
+conditions are normal during the day. Days with dangerous conditions occur with
+probability 0.005. Given the above:
+(a) What is the probability of false alarm, i.e. the probability that conditions are
+normal when the alarm system triggers? ",0.5116,Medium,Probability,Bayes' Theorem,,"Conditional Probability, Bayesian Updating, Interpreting False Positives"
+Probability and statistics in eng (quiz 1 qus 4),MIT OpenCourseWare,"Let X1 and X2 be independent and identically distributed random variables with
+common mean value m and common variance σ2 .
+(a) Find the mean value and variance of Y1 = X1 + X2
+","2σ2, ",Medium,Probability,Expected Value and Variance,,
+Mitterm practice qus 3(Prob and RV,MIT OpenCourseWare,"(a) Roll three dice. Find the probability that there are at least two sixes
+given that there is at least one six.
+(b) Find the conditional probability that a standard poker hand has at
+least 3 aces given that it has at least 2."," (1 − p0 − p1)/(1 − p0),  (p3 + p4)/(p2 + p3 + p4)",Medium,Probability,Conditional Probability,,
+ Midterm Exam 1 Solutions (p &rv),MIT OpenCourseWare,"Consider an infinite sequence of independent tosses of a coin
+that comes up heads with probability 1/3. Let X be such that the third
+heads occurs on the Xth toss.
+u8 (a) Compute P[X = 9]. 
+(b) Compute E[X]. ","(1/3)2(2/3)6(1/3) 2, 9",Medium,Probability,Negative Binomial Distribution,,
+Mitterm practice qus 5(Prob and RV,MIT OpenCourseWare," Suppose X is Poissonian random variable with parameter
+λ1 = 1, Y is an independent Poissonian random variable with λ2 = 2, and
+Z is a Poissonian random variable with parameter λ3 = 3. Assume X and
+Y and Z are independent and compute the following:
+(a) P{X + Y + Z = 8}",e power-6 * 6 power 8/ 8!,Medium,Probability,Poisson Distribution,,
+  HARD PROBLEMS,,,,,,,,
+Final exam (intro to prob and stat),MIT OpenCourseWare,"You roll two fair (6-sided) dice. If the sum of the dice is greater than 9, you win $100. If
+the sum is 9 or less you get to roll again. On the second roll, if your sum of dice is greater
+than 9, you win $50, otherwise you win nothing. Let 𝑋 be the random variable of how much
+money you win by playing this game.
+(a) Construct a probability model for 𝑋, i.e. make a probability table.(b) What is the expected amount you will win playing the game?",(b) 23.61,Hard,Probability,Discrete Random Variables & Expected Value,,
+Final exam (intro to prob and stat),MIT OpenCourseWare,"The Pareto distribution is used in economics modeling. To keep it simple we’ll use the
+Pareto distribution that takes values 𝑥 ≥ 1 and has pdf
+𝑓(𝑥 ∣ 𝜃) = 𝜃𝑥−𝜃−1 for 𝑥 ≥ 1.
+It’s defined whenever 𝜃 > 0. Assume 𝑥1, … , 𝑥𝑛 are 𝑛 independent samples from a Pareto(𝜃)
+distribution, find the maximum likelihood estimate of 𝜃.",pic,Hard,Probability,Maximum Likelihood Estimation (MLE),,
+Final exam (intro to prob and stat),MIT OpenCourseWare,"A certain medical condition exists in 1% of the population. A screening test for the condition
+has a 4% false positive rate and a 0% false negative rate.
+(a) What are the odds that a random person has the condition?(b) Suppose a random person tests positive for the condition. What are the odds they have
+the condition?","
+1/99, 1/4",Hard,Probability,Bayes' Theorem,,
+Final exam (intro to prob and stat),MIT OpenCourseWare,"Jerry wants to brag to his non-MIT colleagues about how smart MIT students are. To
+give himself credibility, he decides to run a statistical test comparing the IQ scores of MIT
+students and Harvard students.
+He collects IQ scores from 11 MIT students. The data has a sample mean of 115, with a
+sample standard deviation of 8.
+He then collects IQ scores from 11 Harvard students. Their scores have a sample mean of
+110, with a sample standard deviation of 6.
+(a) Which test should he run to compare the IQ scores from the two schools? What
+assumptions will he need to make? What are the null and alternative hypotheses?(b) Run the test with a significance level of 𝛼 = 0.05. Should Jerry reject the null hypothesis
+or not?
+(In this problem there is some arithmetic. You will want to use √100/11 ≈ √9 = 3.)",pic,Hard,Probability,Hypothesis Testing,,
+Final exam (intro to prob and stat),MIT OpenCourseWare,"MIT has decided to form a new Department of Statistics and Probability. In a vote for
+the new head of this department, suppose 50% of the MIT population supports Sarah, 20%
+supports So Hee, and the remaining 30% is split evenly among Jerry, Jen, Alessandre and
+Gabe.
+(a) A poll asks 100 random people whom they support. Estimate the probability that at least
+45% of those polled support Sarah",0.84,Hard,Probability,Binomial Distribution & Normal Approximation,,
+Final exam (intro to prob and stat),MIT OpenCourseWare,"You independently draw 100 data points from a N(𝜇, 1) distribution, where 𝜇 is unknown.
+Suppose you test the null hypothesis 𝐻0 ∶ 𝜇 = 0 against the alternative hypothesis 𝐻𝐴 ∶ 𝜇 ≠ 0
+using a significance level of 𝛼 = 0.05. What is the power of the test for the alternative
+𝐻𝐴 ∶ 𝜇 = 0.4?",0.98,Hard,Probability,Statistical Power,,
+Final exam (intro to prob and stat),MIT OpenCourseWare,"A random process produces outcomes labeled 𝐴, 𝐵 and 𝐶 with probabilities 𝜃/2, 𝜃/2, 1 − 𝜃
+respectively. Here 𝜃 is an unknown parameter with value between 0 and 1. You want to
+know the value of 𝜃.
+Before running any experiments you have a prior pdf for 𝜃 of 𝑓(𝜃) = 3𝜃2. You then run the
+process five times producing data 𝐴, 𝐵, 𝐶, 𝐴, 𝐵.
+Find the posterior probability density for 𝜃.",56,Hard,Probability,Bayesian Inference,,

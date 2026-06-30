@@ -1,0 +1,123 @@
+LINEAR ALGEBRA- PROBLEM LOG,,,,,,,
+Enter problems below. Difficulty is pre-filled but editable. Problem_ID format: CALC-E-01 | PROB-M-05 | LA-H-12,,,,,,,
+Problem_ID,Source,Problem Statement,Correct Answer,Difficulty,Topic,Subtopic,Notes / Edge Case
+  EASY PROBLEMS,,,,,,,
+LA-E-01,MIT OpenCourseWare,"Find a combination x₁w₁ + x₂w₂ + x₃w₃ that gives the zero vector where w₁=[1,2,3], w₂=[4,5,6], w₃=[7,8,9]. Are these vectors independent or dependent?
+",w₁ − 2w₂ + w₃ = 0. The vectors are dependent and lie in a plane.,Easy,Linear Algebra,Linear Combinations and Dependence,"Models may state ""dependent"" without showing the actual combination "
+LA-E-02,MIT OpenCourseWare,"(a) Find a 3 by 3 permutation matrix with P 3 = I (but not P = I). 
+(b) Find a 4 by 4 permutation Pwith P4 = I. ","Correct Answer: P = [[0,0,1],[1,0,0],[0,1,0]], cycling rows so P³ = I. (b) Let P be the block diagonal matrix with 1 and P on the diagonal: P = ( 
+0 P 
+). Since 
+P 3 = I, also P3 = I. So P4 = P<>I. ",Easy,Linear Algebra,Permutation matrices,Models may give P² = I instead — wrong cycle length; must verify P³ = I explicitly
+LA-E-03,MIT OpenCourseWare," Problem 18: True or false (check addition or give a counterexample): 
+(a) The symmetric matrices in M (with AT = A) form a subspace. 
+(b) The skew-symmetric matrices in M (with AT = −A) form a subspace. 
+(c) The unsymmetric matrices in M (with AT<>A) form a subspace. ","(a) True: AT = A and BT = B lead to (A + B)T = AT + BT = A + B. 
+(b) True: AT = −A and BT = −B lead to (A + B)T = AT + BT = −A − B = −(A + B). 
+1 1 
+(c) False: ( 
+0 0 
+) + ( 
+1 1 
+) = ( 
+1 1 
+).",Easy,Linear Algebra,Symmetric matrices and subspaces,Models may answer correctly but skip justification for scalar multiplication
+LA-E-04,MIT OpenCourseWare," Suppose A and B are n by n matrices, and AB = I. Prove from rank(AB) ≤
+rank(A) that the rank of A is n. So A is invertible and B must be its two-sided inverse (Section 2.5). 
+Therefore BA = I (which is not so obvious!).","n = rank(I) = rank(AB) ≤ rank(A) ≤ n, so rank(A) = n and A is invertible.
+",Easy,Linear Algebra,Rank and Invertibility,Models often prove rank = n but forget to conclude invertibility 
+LA-E-05,MIT OpenCourseWare,"
+Start with u₀=(1,0). Multiply repeatedly by Markov matrix A=[[0.8,0.3],[0.2,0.7]]. Find u₁, u₂, u₃ and state what property all four vectors share.
+","u₁=[0.8,0.2], u₂=[0.7,0.3], u₃=[0.65,0.35]. All vectors have components that sum to one.
+",Easy,Linear Algebra,Markov Matrices and Steady State,
+LA-E-06,MIT OpenCourseWare," If P 2 = P show that (I − P )2 = I − P . When P projects onto the 
+column space of A, I − P projects onto the . ",(I−P)² = I−2P+P² = I−P. I−P projects onto the left nullspace of A.,Easy,Linear Algebra,Projection Matrices,
+LA-E-07,MIT OpenCourseWare," If the entries in every row of A add to zero, solve 
+Ax = 0 to prove det A = 0. If those entries add to one, show that det(A − I) = 0. 
+Does this mean det A = I? ","Rows summing to zero means x=(1,1,...,1) solves Ax=0 so det A=0. Rows of A−I sum to zero so det(A−I)=0.",Easy,Linear Algebra,Determinants and Singular Matrices,
+LA-E-08,MIT OpenCourseWare,"Suppose you solve Ax=b for three special right sides: Ax₁=[1,0,0], Ax₂=[0,1,0], Ax₃=[0,0,1]. If x₁, x₂, x₃ are columns of matrix X, what is AX?
+","AX = I. X is the inverse of A.
+",Easy,Linear Algebra,Matrix Inverse,
+LA-E-09,MIT OpenCourseWare,"Problem Set 1 Section 2.5, Problem 7
+If A has row 1 + row 2 = row 3, show that A is not invertible by: (a) explaining why Ax=(1,0,0) cannot have a solution, (b) finding which right sides (b₁,b₂,b₃) might allow a solution, (c) stating what happens to row 3 during elimination.
+","(a) A₁·x+A₂·x=A₃·x means 1+0=0 — contradiction. (b) b₁+b₂=b₃ must hold. (c) Row 3 becomes zero during elimination.
+
+",Easy,Linear Algebra,"Singular Matrices and Elimination
+",
+  MEDIUM PROBLEMS,,,,,,,
+LA-M-01,MIT OpenCourseWare,"
+Three planes can fail to have an intersection point even if no planes are parallel. Find a third equation that cannot be solved together with x+y+z=0 and x−2y−z=1",Row 3 must be a linear combination of rows 1 and 2 but right-hand side must violate that relation. Example: 2x+5y+4z=1.,Medium,Linear Algebra,"Systems of Equations and Singular Systems
+",Many valid answers exist 
+LA-M-02,MIT OpenCourseWare,"
+Compute L and U for A=[[a,a,a,a],[a,b,b,b],[a,b,c,c],[a,b,c,d]]. Find four conditions on a,b,c,d for four pivots.
+","Pivots are a, b−a, c−b, d−c. Conditions: a≠0, b≠a, c≠b, d≠c.
+",Medium,Linear Algebra,LU Factorization,Models frequently compute L correctly but list wrong pivot conditions
+LA-M-03,MIT OpenCourseWare,"
+How is the nullspace N(C) related to N(A) and N(B) if C=[A;B]?
+","N(C) = N(A) ∩ N(B). Cx=0 if and only if Ax=0 and Bx=0 simultaneously.
+",Medium,Linear Algebra,Null Space Analysis,Models may say N(C) = N(A) + N(B); this is a classic sign error; correct answer is intersection not sum
+LA-M-04,MIT OpenCourseWare,"
+A is the 4×4 identity with last column removed (4×3). Project b=(1,2,3,4) onto column space of A. Find projection matrix P and the projection.
+","P=[[1,0,0,0],[0,1,0,0],[0,0,1,0],[0,0,0,0]]. Projection of b=(1,2,3,0).
+",Medium,Linear Algebra,"Orthogonal Projection
+","Models may attempt P=A(AᵀA)⁻¹Aᵀ formula correctly but make arithmetic errors in 4×4 setting
+
+
+
+
+"
+LA-M-05,MIT OpenCourseWare,"
+Write E=‖Ax−b‖² as a sum of four squares. Find ∂E/∂C=0 and ∂E/∂D=0 and divide by 2 to get normal equations AᵀAx̂=Aᵀb for the least squares line through points (0,0),(1,8),(3,8),(4,20).
+","Normal equations: 4C+8D=36 and 8C+26D=112.
+",Medium,Linear Algebra,Least Squares and Normal Equations,Multi-step problem ;models often set up E correctly but make errors taking partial derivatives or forget factor of 2
+LA-M-06,MIT OpenCourseWare,"Problem Set  8 Problem 6. (§6.4,#7) 
+1 b (a) Find a symmetric matrix that has a negative eigenvalue. b 1 
+(b) How do you know it must have a negative pivot? 
+(c) How do you know it can’t have two negative eigenvalues?","Take b>1. Eigenvalues are 1±b so one is negative. det=1−b² <0 so one pivot must be negative. c) The product of the eigenvalues equals the determinant, which is negative in this case. Two negative 
+numbers cannothave a negativeproduct
+",Medium,Linear Algebra,"Eigenvalues and Positive Definiteness
+",Models may correctly find b>1 but fail to connect determinant sign to pivot sign
+LA-M-07,MIT OpenCourseWare,"Problem Set 9 Section 6.5, Problem 26
+Find the Cholesky factorization C (upper triangular) for A=[[1,1,1],[1,2,2],[1,2,7]]","C=[[1,1,1],[0,1,1],[0,0,√5]].",Medium,Linear Algebra,Cholesky Factorization,Models often forget to take square root of last pivot 
+LA-M-08,MIT OpenCourseWare,"Problem Set 3  Section 3.3, Problem 25
+Every m×n matrix of rank r reduces to (m×r)(r×n). Write the 3×4 matrix A = [[1,1,2,4],[1,2,2,5],[1,3,2,6]] as the product of pivot columns times first r rows of R","A = [[1,1],[1,2],[1,3]] × [[1,0,2,3],[0,1,0,1]]. Pivot columns of A multiplied by first 2 rows of R.
+",Medium,Linear Algebra,Rank Factorization COL × ROW,Models frequently identify pivot columns correctly but make errors writing the R rows
+LA-M-09,MIT OpenCourseWare,"Problem Set 5  Section 4.1, Problem 9
+If AᵀAx=0 then Ax=0. Reason: Ax is in the nullspace of Aᵀ and also in the column space of A and those spaces are orthogonal. Conclusion: AᵀA has the same nullspace as A.
+Complete the reasoning and fill in the blanks to prove this key fact.",Ax is in the nullspace of Aᵀ AND in the column space of A. Those spaces are orthogonal. Therefore Ax=0. So AᵀA has the same nullspace as A.,Medium,Linear Algebra,Fundamental Subspaces and Orthogonality,Fill-in reasoning problem 
+LA-M-10,MIT OpenCourseWare,"Problem Set 6 Section 5.1, Problem 18
+Use row operations to show that the 3×3 Vandermonde determinant is:
+det([[1,a,a²],[1,b,b²],[1,c,c²]]) = (b−a)(c−a)(c−b)
+","Subtract row 1 from rows 2 and 3, then factor (b−a) from row 2 and (c−a) from row 3. After one more elimination step: det = (b−a)(c−a)(c−b).",Medium,Linear Algebra,Determinants and Row Operations,Multi-step elimination required
+  HARD PROBLEMS,,,,,,,
+LA-H-01,MIT OpenCourseWare,"Problem Set 2  Section 2.6, Problem 18
+If A=LDU and also A=L₁D₁U₁, derive L₁⁻¹LD=D₁U₁U⁻¹ and use it to prove uniqueness: L=L₁, D=D₁, U=U₁.
+","Left side is lower triangular, right side upper triangular, so both are diagonal. Since both have diagonal 1s they equal I, giving L=L₁, U=U₁, D=D₁.",Hard,Linear Algebra,LU Factorization Uniqueness,Multi-step proof
+LA-H-02,MIT OpenCourseWare,"
+Problem Set 3 Section 3.4, Problem 25
+Write down all relations between r, m, n if Ax=b has: (a) no solution for some b, (b) infinitely many solutions for every b, (c) exactly one solution for some b no solution for other b, (d) exactly one solution for every b.
+","(a) The system has less than full row rank: r<m. 
+(b) The system has full row rank, and less than full column rank: m = r<n. 
+(c) The system has full column rank, and less than full row rank: n = r<m. 
+(d) The systemhasfull row and column rank(i.e., is invertible): n = r = m.",Hard,Linear Algebra,Rank and Solution Existence,Abstract reasoning problem
+LA-H-03,MIT OpenCourseWare,"
+Problem Set 6  Section 4.4, Problem 18
+Find orthonormal vectors A, B, C by Gram-Schmidt from a=(1,−1,0,0), b=(0,1,−1,0), c=(0,0,1,−1). Show {A,B,C} is a basis for vectors perpendicular to d=(1,1,1,1).","A=(1/√2)(1,−1,0,0), B=(1/√6)(1,1,−2,0), C=(1/2√3)(1,1,1,−3). All three are perpendicular to d and span the 3-dimensional subspace.",Hard,Linear Algebra,Gram-Schmidt Orthogonalization,Most complex calculation in medium-hard range
+LA-H-04,MIT OpenCourseWare,"Problem Set 8  Section 6.3, Problem 24
+Write A=[[1,3],[0,0]] as SΛS⁻¹. Find matrix exponential eᴬᵗ by multiplying SeΛᵗS⁻¹. Verify eᴬᵗ and its derivative at t=0","Λ=[[1,0],[0,3]], S=[[-1/2,1/2],[0,1]]. eᴬᵗ=[[eᵗ, (3e³ᵗ−eᵗ)/2],[0,e³ᵗ]]. At t=0 gives I; derivative at t=0 gives A.",Hard,Linear Algebra,"Matrix Exponential and Diagonalization
+",Two verification steps required 
+LA-H-05,MIT OpenCourseWare,"Problem Set 10 Section 6.6, Problem 12
+Compare JM with MK for Jordan matrices J and K. If JM=MK show M is not invertible, proving J is not similar to K","Setting JM=MK forces specific entries of M to zero making the second row or fourth row dependent, so M is always singular and J cannot be similar to K.
+",Hard,Linear Algebra,Jordan Form and Matrix Similarity,Highest hallucination risk problem 
+LA-H-06,MIT OpenCourseWare,"
+Problem Set 10  Section 6.7, Problem 4
+Find eigenvalues and unit eigenvectors of AᵀA and AAᵀ for Fibonacci matrix A=[[1,1],[1,0]]. Construct the full SVD and verify A=UΣVᵀ.","Eigenvalues (3±√5)/2. Singular values σ=(1±√5)/2. Full SVD constructed from these eigenvectors and verified.
+",Hard,Linear Algebra,Singular Value Decomposition,Most computationally demanding problem 
+LA-H-07,MIT OpenCourseWare,"Problem Set 9  Section 6.5, Problem 33
+When A and B are symmetric positive definite, AB might not be symmetric. Prove its eigenvalues are still positive by starting from ABx=λx and taking dot products with Bx.
+","ABx)ᵀBx=(Bx)ᵀA(Bx)=λxᵀBx. Since B positive definite xᵀBx>0 and A positive definite means (Bx)ᵀA(Bx)>0, so λ>0.",Hard,Linear Algebra,"Positive Definite Matrices
+",Abstract proof
+LA-H-08,MIT OpenCourseWare,"Problem Set 10 Section 6.6, Problem 22
+If an n×n matrix A has all eigenvalues λ=0, prove that Aⁿ is the zero matrix.","Each Jordan block Jᵢ of size nᵢ satisfies Jᵢⁿⁱ=0 since there is no diagonal nᵢ diagonals above the main diagonal. Since all blocks satisfy Jᵢⁿ=0 and Aⁿ is similar to a block diagonal matrix with these blocks, Aⁿ=0. Alternatively by Cayley-Hamilton: all eigenvalues zero means characteristic polynomial is xⁿ so Aⁿ=0.
+",Hard,Linear Algebra,"Jordan Form and Nilpotent Matrices
+",Two valid proof methods; Jordan block argument or Cayley-Hamilton

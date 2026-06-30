@@ -1,0 +1,97 @@
+  Calculus — Problem Entry Log,,,,,,,
+Enter problems below. Difficulty is pre-filled but editable. ,,,,,,,
+Problem_ID,Source,Problem Statement,Correct Answer,Difficulty,Topic,Subtopic,Notes/Edge Case
+  EASY PROBLEMS,,,,,,,
+"
+CALC-E-01",MIT OpenCourseWare ,"Problem Set: Unit 1: Differentiation 1E-1a
+ Find the derivative of the following polynomial. 
+a) x¹⁰ + 3x⁵ + 2x³ + 4.",f'(x) = 10x⁹ + 15x⁴ + 6x²,Easy,Calculus,Basic Differentiation,Power rule applied term-by-term
+CALC-E-02,MIT OpenCourseWare ,"
+ Find the points (x, y) of the graph y = x³ + x² − x + 2 at which the slope of the tangent line is horizontal.","
+1/3, 49/27) and (−1, 3)
+",Easy,Calculus,Basic Differentiation ; Critical Points,May try direct substitution
+CALC-E-03,MIT OpenCourseWare ,"
+Calculate the following limit if it exists: lim_{x→0} 4/(x−1).",-4,Easy,Calculus,Limits & Continuity,Direct substitution
+CALC-E-04,MIT OpenCourseWare ,"Calculate the limit: lim(x→2) (x − 2)/(x² − 4).
+",1/4,Easy,Calculus,Limits & Continuity,
+CALC-E-05,MIT OpenCourseWare ,"
+Find the derivative of f(x) = (x² + 2)² using two methods","f'(x) = 4x³ + 8x
+",Easy,Calculus,Chain Rule,Outputs must match
+CALC-E-06,MIT OpenCourseWare ,"
+
+Calculate the derivative of f(x) = xe^x.",f'(x) = (x + 1)eˣ,Easy,Calculus,Exponential & Logarithmic Derivatives,Product rule
+CALC-E-07,MIT OpenCourseWare ,"
+Find the area under one arch of sin x, i.e., evaluate ∫₀^π sin x dx.
+",2,Easy,Calculus,Definite Integrals ; Fundamental Theorem of Calculus,
+CALC-E-08,MIT OpenCourseWare ,"
+Compute the indefinite integral ∫(2x⁴ + 3x² + x + 8) dx.",(2/5)x⁵ + x³ + x²/2 + 8x + C,Easy,Calculus,"Indefinite Integration; Polynomials
+",Chain rule missed
+CALC-E-09,MIT OpenCourseWare ,"                                                                                                                                                                                                                                                                                                                                                                                                                          Find the area under the curve y = 1 − x² (the region between the curve and the x-axis) in two ways.
+                                                                          ",4/3,Easy,Calculus,Areas Between Curves,Both outputs must match
+CALC-E-10,MIT OpenCourseWare ,"
+Problem Set: Unit 7: Infinite Series 7A-1a
+Does the series 1 + 1/4 + 1/16 + 1/64 + … + 1/4ⁿ + … converge or diverge? If it converges, find its sum.","Coverage, sum:4/3",Easy,Calculus,"Infinite Series — Geometric Series
+",
+  MEDIUM PROBLEMS,,,,,,,
+CALC-M-01,MIT OpenCourseWare ,"
+Problem Set: Unit 1: Differentiation 1F-3 Find dy/dx for y = x^(1/n) by implicit differentiation.  ","dy/dx = (1/n)x^(1/n − 1)
+",Medium,Calculus,Implicit Differentiation,differentiate both sides implicitly
+CALC-M-02,MIT OpenCourseWare ,"Problem Set: Unit 1: Differentiation 1G-1a Calculate y'' for f(x) = 3x² + 2x + 4√x.
+","y'' = 6 − x^(−3/2)
+",Medium,Calculus,Higher Derivatives,
+CALC-M-03,MIT OpenCourseWare ,"Problem Set: Unit 2: Applications of Differentiation 2A-1
+Find the linearization of f(x) = √(a + bx) at x = 0 (where a > 0, and a and b are constants), using the derivative, and also by using the basic approximation formulas",√a + (b / 2√a)·x,Medium,Calculus,Linear Approximation (Linearization),Both methods yield the same result
+CALC-M-04,MIT OpenCourseWare ,"
+Problem Set: Unit 2: Applications of Differentiation 2C-1
+Cut four identical squares of side x out of the corners of a 12 × 12 inch piece of cardboard and fold the sides up to make a box without a top. Find the size of the corner square that maximizes the volume of the box.
+
+","x = 2 inches
+",Medium,Calculus,"Max-Min Problems
+",
+CALC-M-05,MIT OpenCourseWare ,"Problem Set: Unit 2: Applications of Differentiation 2E-4
+Sand is pouring onto a conical pile at a rate of 12 m³/min, in such a way that the diameter of the base is always 3/2 the height. Find the rate at which the height is increasing when the pile is 2 m tall.",16/3π m/min,Medium,Calculus,Related Rates,Verify arithmetic 
+CALC-M-06,MIT OpenCourseWare ,"Problem Set: Unit 3: Integration3C-2a
+ Calculate the definite integral ∫₀² √(3x + 5) dx.","(2/9)(11^(3/2) − 5^(3/2))
+",Medium,Calculus,Definite Integrals,
+CALC-M-07,MIT OpenCourseWare ,"Problem Set: Unit 3: Integration 3F-2a
+Solve the differential equation dy/dx = 4xy with the initial condition y(1) = 3. Find y(3).","y(3) =3e¹⁶
+",Medium,Calculus,"Differential Equations, Separation of Variables
+",exponent arithmetic
+CALC-M-08,MIT OpenCourseWare ,"
+Problem Set: Unit 4: Applications of Integration 4A-4
+ Find the area between y = sin x and y = cos x from one crossing to the next","2√2
+",Medium,Calculus,Areas Between Curves ,find correct interval
+CALC-M-09,MIT OpenCourseWare ,"
+Problem Set: Unit 5: Integration Techniques 5C-1
+Evaluate ∫ sin²(x) dx.
+","x/2 − sin(2x)/4 + C
+",Medium,Calculus,Trigonometric Integrals,
+CALC-M-10        ,MIT OpenCourseWare ,"
+Problem Set: Unit 6: Additional Topics 6A-1a
+Find the limit: lim(x→0) sin(3x)/x.
+",3,Medium,Calculus,L Hospital's Rule,
+  HARD PROBLEMS,,,,,,,
+CALC-H-01,MIT OpenCourseWare ,"Problem Set: Unit 2: Applications of Differentiation 2C-4
+The U.S. Postal Service accepts boxes whose length plus girth equals at most 108 inches. What are the dimensions of the accepted box of largest volume, and what is its volume in cubic feet? (""Length"" is the longest dimension and ""girth"" is the perimeter of the perpendicular face. Note: the best shape for the face is a square.)","Dimensions: 36 in × 18 in × 18 in; Volume = 6.75 cubic feet
+",Hard,Calculus,Max and MIn,
+CALC-H-02,MIT OpenCourseWare ,"Problem Set: Unit 2: Applications of Differentiation 2E-7
+A trough is filled with water at a rate of 1 cubic meter per second. The trough has a trapezoidal cross-section with a lower base of half a meter, one-meter sides opening outward at 45° from the base, and a length of 4 meters. What is the rate at which the water level h is rising when h is one half meter?
+","dh/dt = 1/6 meters per second
+",Hard,Calculus,Related Rates ,
+CALC-H-03,MIT OpenCourseWare ,"Problem Set: Unit 3: Integration 3C-3a Calculate the definite integral ∫₁² x dx/(x² + 1).
+","(1/2)ln(5/2)
+",Hard,Calculus,Definite Integrals,
+CALC-H-04,MIT OpenCourseWare ,"
+Problem Set: Unit 4: Applications of Integration 4B-1a
+Find the volume of the solid of revolution generated by rotating the region bounded by y = 1 − x², y = 0 around the x-axis.
+","16π/15
+",Hard,Calculus,"Volumes of Revolution, Disk Method",
+CALC-H-05 ,MIT OpenCourseWare ,Problem Set: Unit 5: Integration Techniques 5E-1 Evaluate the integral ∫ dx / ((x − 2)(x + 3)).,(1/5)ln|x − 2| − (1/5)ln|x + 3| + C,Hard,Calculus,"Integration by Partial Fractions
+",
+CALC-H-06,MIT OpenCourseWare ,"Problem Set: Unit 5: Integration Techniques 5F-2a
+Evaluate ∫ x eˣ dx.
+","xeˣ − eˣ + C
+",Hard,Calculus,Integration by Parts,
+CALC-H-07,MIT OpenCourseWare ,"
+Problem Set: Unit 7: Infinite Series 7A-4b
+Find the sum of the series Σ(n=1 to ∞) 1/(n(n+2)) by first finding the partial sum Sₘ.",3/4,Hard,Calculus,Infinite Series ,
