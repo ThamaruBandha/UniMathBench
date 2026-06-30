@@ -1,0 +1,5 @@
+PROMPT TEMPLATE
+You are given a university-level mathematics problem. Solve the problem. Present your response in the following format exactly:
+Reasoning: [Your solution process]
+Final Answer: [Your final answer]
+Problem: {QUESTION}
