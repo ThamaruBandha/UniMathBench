@@ -1,0 +1,14 @@
+  Problem Dataset — Summary Dashboard,,,,
+Tracks total problems entered. Target: ~80 problems total.,,,,
+,,,,
+Subject,Easy,Medium,Hard,Total Entered
+Calculus,10,10,7,27
+Probability,9,10,7,26
+Linear Algebra,9,10,8,27
+TOTAL,28,30,22,80
+,,,,
+  HOW TO USE THIS WORKBOOK,,,,
+"1.  Navigate to the Calculus, Probability, or Linear Algebra sheet.",,,,
+"2.  Fill in: Problem_ID, Source, Problem Statement, and Correct Answer.",,,,
+3.  Difficulty and Topic are pre-filled. You may edit Difficulty if needed.,,,,
+"Problem ID: CALC-E-01(Calculus, Easy, Problem 1)",,,,
