@@ -1,0 +1,18 @@
+Benchmark Experiment — Summary Statistics,,,,,,,,,,,,,
+"FORMULAS :
+Accuracy (%) = (Σ correct / n) × 100  |  Avg PC (/3) = Σ PC scores / n  |  Avg RQ (/3) = Σ RQ scores / n  |  Hall Rate (%) = (Σ hall=1 / n) × 100  |  Reliability (%) = 100 − Hall Rate  |  Avg RT (s) = Σ RT / n  |  High Quality RQ (%) = (count RQ=3 / n) × 100",,,,,,,,,,,,,
+Model,"Type
+(Cloud/Local)",n,"Correct
+Answers","Accuracy
+(%)","Avg PC
+(/3)",PC (%),"Avg RQ
+(/3)",RQ (%),"Hall
+Rate (%)","Reliability
+(%)","High Quality
+RQ (%)","Avg RT
+(s)",CompS%
+Claude,Cloud,80,79,98.75%,2.925,97.50%,2.8625,95.42%,1.25%,98.75%,86.25%,13.41s,93.75%
+ChatGPT,Cloud,80,76,95%,2.8875,96.25%,2.625,87.50%,3.75%,96.25%,62.50%,13.89s,90%
+Qwen 2.5 7B,Local,80,59,73.75%,2.45,84.17%,2.4625,82.08%,12.5,87.50%,56.25%,251.93s,67.50%
+Llama 3.1 8B,Local,80,46,57.50%,2.5375,84.58%,2.4625,82.08%,7.5,92.5,55%,135.83s,60%
+Mistral 7B,Local,80,23,29%,1.725,57.50%,1.9125,63.75%,7.50%,92.50%,41.25%,232.55s,26.25%
